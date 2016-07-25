@@ -14,6 +14,8 @@ Automatically import events from Meetup.com into The Events Calendar.
 
 To get started, make sure that you have The Events Calendar plugin (by Modern Tribe) installed. This plugin will not do anything without it!
 
+Also, make sure that ```define('DISABLE_WP_CRON', false);``` if this is set to ```true``` events will not be imported.
+
 After you have both plugins installed, you need to configure a couple of settings. First navigate to Events -> Import in your Dashboard. From there you can input your [Meetup.com API Key](https://secure.meetup.com/meetup_api/key/) and choose the post status that should be used for imports.
 
 Next, click on the "Meetup.com" tab. From there you can fill in the URL for a Meetup group, select the Event Categories you want it to be mapped to, and hit "Add Recurring Import". This will schedule a script to run twice a day to import the upcoming events from that group into The Events Calendar. You can add as many groups as you'd like.
